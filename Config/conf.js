@@ -14,14 +14,14 @@ exports.config = {
   ],
   cucumberOpts: {
     compiler: [],
-    require: ['../Cases/Steps/*.js','../Util/timeouts.js'],
-    strict  : true,
-    dryRun  : false,
-    tags    : []
+    require: ['../Cases/Steps/*.js', '../Util/timeouts.js'],
+    strict: true,
+    dryRun: false,
+    tags: []
   },
 
   onPrepare: function () {
     browser.manage().window().maximize(); // maximize the browser before executing the feature files
-    browser.waitForAngular(false);
+    browser.waitForAngularEnabled(false);
   }
 };
