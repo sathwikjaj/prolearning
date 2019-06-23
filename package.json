@@ -1,12 +1,12 @@
 {
   "name": "prolearning",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Attempt at a Protactor framework POC",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "sathwik",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.2.0",
@@ -18,9 +18,23 @@
   "dependencies": {
     "chromedriver": "^2.46.0",
     "cucumber": "^5.1.0",
-    "geckodriver": "^1.16.0",
+    "geckodriver": "^1.16.2",
     "pretty": "^2.0.0",
+    "protractor-multiple-cucumber-html-reporter-plugin": "^1.8.1",
     "save": "^2.4.0",
-    "webdriver-manager": "^13.0.0"
-  }
+    "webdriver-manager": "^13.0.0",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^3.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sathwikjaj/prolearning.git"
+  },
+  "keywords": [
+    "protractor"
+  ],
+  "bugs": {
+    "url": "https://github.com/sathwikjaj/prolearning/issues"
+  },
+  "homepage": "https://github.com/sathwikjaj/prolearning#readme"
 }

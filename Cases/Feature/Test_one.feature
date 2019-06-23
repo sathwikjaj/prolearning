@@ -2,7 +2,7 @@ Feature: LoginFeature
     This feature logins into the web
 
     @zero
-    Scenario Outline: Test our application
+    Scenario Outline: Test our applicationn
         Given I navigate to the website  
         When I click on the sign-in link
         And I navigate to the login page

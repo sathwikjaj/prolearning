@@ -5,34 +5,34 @@ const { assert, expect, should } = require("chai");
 
 Given(/^I navigate to the website$/, function () {
     return page.navigateToSite().then(() => {
-        console.log("Step 1 complete")
+        logger.info("Step 1 Complete : Daya!! Darvaza tod do!!");
     }).catch(function (err) {
-        console.log(err);
+        logger.info(err);
         expect.fail(null, null, err);
     })
 });
 
 When(/^I click on the sign-in link$/, function (callback) {
-    console.log("yes2");
+    logger.info("Step 2 Complete");
     callback();
 });
 
 When(/^I navigate to the login page$/, function (callback) {
-    console.log("yes3");
+    logger.info("Step 3 Complete");
     callback();
 });
 
 Then(/^I enter the (.*) and (.*)$/, function (email, password, callback) {
-    console.log("yes4" + email + password);
+    logger.info("Step 4 Complete :" + email+ "  " + password);
     callback();
 });
 
 Then(/^I click on the sign-in button$/, function (callback) {
-    console.log("yes5");
+    logger.info("Step 5 Complete");
     callback();
 });
 
 Then(/^I navigate to the account page$/, function (callback) {
-    console.log("yes5");
+    logger.info("Step 6 Complete");
     callback();
 });
